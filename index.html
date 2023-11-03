@@ -68,6 +68,95 @@
             padding: 20px;
         }
 
+              /* Styles for the gallery */
+        .section {
+            background-color: #444; /* Match the background color of the sections */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Spacing between gallery items */
+        }
+
+        .gallery-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            padding-bottom: calc(100% / 2); /* 2:1 aspect ratio */
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .gallery-lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+        
+        .lightbox-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .lightbox-image {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        
+        .lightbox-prev,
+        .lightbox-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .lightbox-prev {
+            left: 10px;
+        }
+        
+        .lightbox-next {
+            right: 10px;
+        }
+
+                .lightbox-exit {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            padding: 40px;
+            color: #fff;
+            cursor: pointer;
+            z-index: 2;
+        }
+
                 /* Styles for the contact form */
         .contact-form {
             background-color: #444; /* Match the background color of the sections */
@@ -79,6 +168,7 @@
         .contact-form input[type="text"],
         .contact-form input[type="email"],
         .contact-form textarea {
+            font-size: 18px;
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -92,7 +182,7 @@
         .contact-form input::placeholder,
         .contact-form textarea::placeholder {
             color: #ccc; /* Adjust the placeholder text color to a light gray */
-            font-style: italic; /* Add italic style to the placeholders */
+           
         }
 
         .contact-form button {
@@ -102,6 +192,7 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 18px;
         }
 
         .contact-form button:hover {
@@ -124,6 +215,8 @@
             margin-top: 20px;
         }
 
+
+
     </style>
 </head>
 <body>
@@ -139,6 +232,7 @@
             <p>
 Dopamine Events supplies Funktion One sound systems for various types of events and parties where superior amplified sound is required. Our goal is to enhance the overall experience and create memorable moments by delivering a seamless sonic performance. We also provide waterproof lighting to enhance ambiance and elevate the energy.
             </p>
+            <image src="images/9.png" alt="Sound and Light Image" class="responsive-image"></image>
         </div>
         <div class="section">
             <h2>Experience and Expertise</h2>
@@ -147,18 +241,17 @@ Dopamine Events supplies Funktion One sound systems for various types of events 
             </p>
         </div>
         <div class="section">
-            <image src="images_large/2.jpg" alt="Location Image" class="responsive-image"></image>
             <h2>Location</h2>
             <p>
                 Although our headquarters are located in the South West near Gloucester, Dopamine Events serves clients and events across the entire U.K., encompassing nightclubs, bars, wedding venues, promoters, and festivals.
             </p>
         </div>
         <div class="section">
-            <image src="images/3.png" alt="Location Image" class="responsive-image"></image>
             <h2>Sound Assessment and Noise Prediction</h2>
             <p>
                 Dopamine Events provides comprehensive sound assessment services, utilising advanced noise prediction software to calculate and anticipate offsite noise pollution. Our dedicated team analyses the unique requirements and budget constraints of each venue, allowing us to recommend and implement the optimal equipment tailored to your specific needs.
             </p>
+            <image src="images/3.png" alt="Location Image" class="responsive-image"></image>
         </div>
         <div class="section">
             <h2>Equipment Rental</h2>
@@ -178,6 +271,53 @@ Dopamine Events supplies Funktion One sound systems for various types of events 
                 All equipment rentals are subject to a deposit and contract. The company has public liability insurance and conducts PAT testing on all equipment to ensure safety and compliance with regulations.
             </p>
         </div>
+
+    <!-- Gallery section -->
+    <div class="section">
+        <h2 style="padding-bottom: 20px;">Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item" onclick="openLightbox('images/1.png')">
+                <img src="images/1.png" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/2.png')">
+                <img src="images/2.png" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/4.png')">
+                <img src="images/4.png" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/5.png')">
+                <img src="images/5.png" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/6.png')">
+                <img src="images/6.png" alt="Gallery Image 6">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/7.png')">
+                <img src="images/7.png" alt="Gallery Image 7">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/8.png')">
+                <img src="images/8.png" alt="Gallery Image 8">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/9.png')">
+                <img src="images/9.png" alt="Gallery Image 9">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/10.png')">
+                <img src="images/10.png" alt="Gallery Image 10">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('images/11.png')">
+                <img src="images/11.png" alt="Gallery Image 11">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="gallery-lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-exit" onclick="closeLightbox()">&#10006;</span>
+            <span class="lightbox-prev" onclick="changeLightboxImage(-1)">&#9664;</span>
+            <img class="lightbox-image" id="lightbox-image" src="" alt="Lightbox Image">
+            <span class="lightbox-next" onclick="changeLightboxImage(1)">&#9654;</span>
+        </div>
+    </div>
         <div class="section">
             <h2>Contact us</h2>
     <!-- Contact form -->
