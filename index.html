@@ -1,131 +1,281 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
+
 <head>
     <meta charset="UTF-8">
-    <title>Dopamine Events</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videograph | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-
-    <header>
-
-        <h1>D O P A M I N E &ensp; E V E N T S</h1>
-
-    </header>
-    <div class="container">
-        <div class="section">
-            <h2>Sound and Lighting Services</h2>
-            <p>
-                Dopamine Events supplies Funktion One sound systems for various types of events and parties where superior amplified sound is required. Our goal is to enhance the overall experience and create memorable moments by delivering a seamless sonic performance. We also provide waterproof lighting to enhance ambiance and elevate the energy.
-            </p>
-            <image src="images/9.png" alt="Sound and Light Image" class="responsive-image"></image>
-        </div>
-        <div class="section">
-            <h2>Experience and Expertise</h2>
-            <p>
-                The company collaborates with team members who possess extensive experience in the industry, including sound and lighting engineers. This expertise guarantees a high level of professionalism and meticulous attention to detail. Our objective is to ensure the seamless execution of events, from the initial stages of production to the final wrap-up.
-            </p>
-        </div>
-        <div class="section">
-            <h2>Location</h2>
-            <p>
-                Although our headquarters are located in the South West near Gloucester, Dopamine Events serves clients and events across the entire U.K., encompassing nightclubs, bars, wedding venues, promoters, and festivals.
-            </p>
-        </div>
-        <div class="section">
-            <h2>Sound Assessment and Noise Prediction</h2>
-            <p>
-                Dopamine Events provides comprehensive sound assessment services, utilising advanced noise prediction software to calculate and anticipate offsite noise pollution. Our dedicated team analyses the unique requirements and budget constraints of each venue, allowing us to recommend and implement the optimal equipment tailored to your specific needs.
-            </p>
-            <image src="images/3.png" alt="Location Image" class="responsive-image"></image>
-        </div>
-        <div class="section">
-            <h2>Equipment Rental</h2>
-            <p>
-                The company boasts an extensive inventory of DJ equipment available for rent, featuring top-tier offerings such as Funktion One speakers, psm318 monitors, FFA amplifiers, and a variety of additional gear. We are able to facilitate multi-stage setups, complete with a comprehensive range of amplification and processing equipment
-            </p>
-        </div>
-        <div class="section">
-            <h2>Lighting Services</h2>
-            <p>
-                Dopamine Events specialises in a wide range of lighting solutions, from moving heads and beams to wash lights and waterproof up-lighters. We excel in crafting captivating visual effects with Laserworld lasers and Pangolin software.
-            </p>
-        </div>
-        <div class="section">
-            <h2>Safety and Insurance</h2>
-            <p>
-                All equipment rentals are subject to a deposit and contract. The company has public liability insurance and conducts PAT testing on all equipment to ensure safety and compliance with regulations.
-            </p>
-        </div>
-
-        <!-- Gallery section -->
-        <div class="section">
-            <h2 style="padding-bottom: 20px;">Gallery</h2>
-            <div class="gallery">
-                <div class="gallery-item" onclick="openLightbox('images/1.png')">
-                    <img src="images/1.png" alt="Gallery Image 1">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/2.png')">
-                    <img src="images/2.png" alt="Gallery Image 2">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/4.png')">
-                    <img src="images/4.png" alt="Gallery Image 4">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/5.png')">
-                    <img src="images/5.png" alt="Gallery Image 5">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/6.png')">
-                    <img src="images/6.png" alt="Gallery Image 6">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/7.png')">
-                    <img src="images/7.png" alt="Gallery Image 7">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/8.png')">
-                    <img src="images/8.png" alt="Gallery Image 8">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/9.png')">
-                    <img src="images/9.png" alt="Gallery Image 9">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/10.png')">
-                    <img src="images/10.png" alt="Gallery Image 10">
-                </div>
-                <div class="gallery-item" onclick="openLightbox('images/11.png')">
-                    <img src="images/11.png" alt="Gallery Image 11">
-                </div>
-
-            </div>
-        </div>
-
-        <div class="gallery-lightbox" id="lightbox">
-            <div class="lightbox-content">
-                <span class="lightbox-exit" onclick="closeLightbox()">&#10006;</span>
-                <span class="lightbox-prev" onclick="changeLightboxImage(-1)">&#9664;</span>
-                <img class="lightbox-image" id="lightbox-image" src="" alt="Lightbox Image">
-                <span class="lightbox-next" onclick="changeLightboxImage(1)">&#9654;</span>
-            </div>
-        </div>
-        <div class="section">
-            <h2>Contact us</h2>
-            <!-- Contact form -->
-            <form class="contact-form" method="post" action="https://forms.un-static.com/forms/89c6ed593a8a43c8bbeace1a1d6e821c125f167e">
-                <input type="text" name="name" placeholder="Enter your name" required>
-                <input type="email" name="email" placeholder="Enter your e-mail address" required>
-                <textarea name="message" placeholder="Your message" cols="40" rows="15"></textarea>
-                <button type="submit">Send</button>
-
-            </form>
-        </div>
-
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
 
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">About</a></li>
+                                        <li><a href="./portfolio.html">Portfolio</a></li>
+                                        <a href="./contact.html">Contact</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
 
-    <!-- Footer section -->
-    <footer>
-        <div class="copyright">
-            &copy; 2023 Dopamine Events. All rights reserved.
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="images/bg.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Event Production</span>
+                                <h2>Dopamine Events</h2>
+                                <a href="#" class="primary-btn">See more about us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="images/bg.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Event Production</span>
+                                <h2>Lighting</h2>
+                                <a href="#" class="primary-btn">See more about us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="images/bg.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Event Production</span>
+                                <h2>Sound</h2>
+                                <a href="#" class="primary-btn">See more about us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Our services</span>
+                            <h2>What We do?</h2>
+                        </div>
+                        <p>At Dopamine Events, we are dedicated to the art of crafting extraordinary and unforgettable experiences. Our expertise lies in providing immersive soundscapes, bespoke light displays, and innovative event design to elevate your gatherings.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/1.png" alt="">
+                                </div>
+                                <h4>Lighting</h4>
+                                <p>Dopamine Events specialises in a wide range of lighting solutions, from moving heads and beams to wash lights and waterproof up-lighters. We excel in crafting captivating visual effects with Laserworld lasers and Pangolin software.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/2.png" alt="">
+                                </div>
+                                <h4>Sound</h4>
+                                <p>Dopamine Events supplies Funktion One sound systems for various types of events and parties where superior amplified sound is required. Our goal is to enhance the overall experience and create memorable moments by delivering a seamless sonic performance.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/4.png" alt="">
+                                </div>
+                                <h4>Noise Prediction</h4>
+                                <p>Dopamine Events provides comprehensive sound assessment services, utilising advanced noise prediction software to calculate and anticipate offsite noise pollution. Our dedicated team analyses the unique requirements and budget constraints of each venue, allowing us to recommend and implement the optimal equipment tailored to your specific needs.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/3.png" alt="">
+                                </div>
+                                <h4>Equipment Rental</h4>
+                                <p>The company boasts an extensive inventory of DJ equipment available for rent, featuring top-tier offerings such as Funktion One speakers, psm318 monitors, FFA amplifiers, and a variety of additional gear. We are able to facilitate multi-stage setups, complete with a comprehensive range of amplification and processing equipment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Work Section Begin -->
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="images/1.png">
+
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="images/2.png">
+
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="images/4.png">
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="images/5.png">
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="images/6.png">
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="images/7.png">
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="images/8.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+
+    <!-- Call To Action Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79055.92955810796!2d-2.3056549143489087!3d51.74222029061618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871092683730fe9%3A0x21fe826bce673a49!2sStroud!5e0!3m2!1sen!2suk!4v1699110896196!5m2!1sen!2suk"
+                            height="450" style="border:0;"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__form">
+                        <h3>Get in touch</h3>
+                        <form action="#">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Website">
+                            <textarea placeholder="Message"></textarea>
+                            <button type="submit" class="site-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This template is made by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- Footer Section End -->
 
-    <script src="script.js"></script>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
