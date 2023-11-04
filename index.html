@@ -290,6 +290,30 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+       
+    // Function to handle smooth scrolling
+    function scrollToSection(sectionId) {
+        const section = document.querySelector(sectionId);
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: "smooth" // Add smooth scroll behavior
+            });
+        }
+    }
+
+    // Get all the navigation links and add click event listeners
+    const navLinks = document.querySelectorAll('.header__nav__menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent the default behavior of the link
+            const targetId = link.getAttribute('href');
+            scrollToSection(targetId);
+        });
+    });
+</script>
+
 </body>
 
 </html>
