@@ -108,6 +108,131 @@ ol {
 /*---------------------
   Helper CSS
 -----------------------*/
+
+/* Countdown */
+
+.countdown {
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #100028;
+}
+
+.countdown span {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    margin-left: 0.8rem;
+}
+
+.countdown span:first-of-type {
+    margin-left: 0;
+}
+
+.countdown-circles {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown-circles span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-circles span:first-of-type {
+    margin-left: 0;
+}
+
+.close {
+  font-size: 1.5rem;
+}
+
+
+
+.bg-gradient-4 {
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #21133b, #00bfe7);
+    background: linear-gradient(to right, #21133b, #00bfe7);
+}
+
+.rounded {
+    border-radius: 1rem !important;
+}
+
+.btn-demo {
+    padding: 0.5rem 2rem !important;
+    border-radius: 30rem !important;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold !important;
+}
+
+.btn-demo:hover, .btn-demo:focus {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Countdown end */
+
+
+
+        .quote-section2 {
+            background: url('images/5.png') center/cover no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            color: white;
+            overflow: hidden;
+        }
+
+        .dark-purple-filter {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(33, 19, 59, 0.7);
+        }
+
+        .quote-container {
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .quote {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .author {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .quotation-mark {
+            font-size: 36px;
+            margin-right: 5px;
+            margin-left: -5px;
+            vertical-align: middle;
+        }
+
+
+
+.quote-section {
+  padding: 30px;
+  background: linear-gradient(to left, #601da9, #21133b);
+}
+
 .section-title {
   margin-bottom: 50px;
 }
@@ -532,6 +657,9 @@ ol {
 }
 
 .work__item {
+    opacity: 0.7;
+  cursor: pointer;
+
   height: 311px !important;
   width: calc(16.67% - 10px);
   margin-right: 10px;
@@ -551,7 +679,17 @@ ol {
 }
 .work__item:hover .work__item__hover {
   bottom: 0;
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.work__item:hover {
+  bottom: 0;
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 .work__item.large__item {
   height: 633px !important;
   width: calc(33.33% - 10px);
@@ -560,17 +698,8 @@ ol {
   width: calc(33.33% - 10px);
   height: 311px !important;
 }
-.work__item .play-btn {
-  display: inline-block;
-  color: #ffffff;
-  font-size: 20px;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-}
+
+
 
 .grid-sizer {
   width: calc(16.67% - 10px);
@@ -1921,13 +2050,13 @@ ol {
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #fff;
   }
 
   .slicknav_nav a:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #fff;
   }
 
   .slicknav_nav {
@@ -1938,7 +2067,7 @@ ol {
     position: absolute;
     right: 10px;
     top: 26px;
-    background: #00bfe7;
+    background: #000;
   }
 
   .header .container {
@@ -2169,4 +2298,6 @@ ol {
   .blog__details__quote {
     padding: 30px 40px 35px 35px;
   }
+
+
 }
